@@ -1,23 +1,78 @@
-<!doctype html>
+<!DOCTYPE html> 
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Login</title>
-	<style>
-		body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loginbox {
+            background-color: beige;
+            height: 450px;
+            width: 600px;
+            margin-top: 10px;
+            margin-left: 350px;
+            border-radius: 10px;
         }
-        input[type="text"], input[type="email"]input[type="password"] 
-        {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        .h1 {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+            margin-top: 5px;
         }
+
+        label{
+            color: brown;
+            margin-left: 150px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 10px;
+
+        }
+        input{
+            background-color: rgb(255, 255, 255);
+            color: rgb(10, 10, 10);
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .button{
+          background-color: black;
+            color: white;
+            height: 30px;
+            width: 100px;
+            margin-left: 250px;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 1%;
+        }
+
+        button:hover{
+            background-color: brown;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="loginbox">
+        <h1 class="h1">Login Here</h1>
+        <div class="row">
+            <label>
+                Username:
+            </label>
+            <input type="text" placeholder="Enter Username" name="username">
+        </div><br>
+        <div class="row">
+            <label>
+                Password:
+            </label>
+            <input type="password" placeholder="Enter Your password" name="password">
+        </div>
+        <button class="button">Login</button>
+    </div>
+</body>
+
+</html>
